@@ -1,0 +1,15 @@
+*.exe
+*.zip
+*.xl*
+*.csv
+*.o
+*.ppu
+fp.*
+backup/*
+lib/*
+test/*
+*/backup/*
+*/lib/*
+*/test/*
+
+

@@ -1,0 +1,28 @@
+object Form1: TForm1
+  Left = 350
+  Height = 240
+  Top = 33
+  Width = 320
+  Caption = 'Form1'
+  Menu = MainMenu1
+  LCLVersion = '4.6.0.0'
+  object MainMenu1: TMainMenu
+    Left = 69
+    Top = 36
+    object MenuItem1: TMenuItem
+      Caption = '&File'
+      object MenuItem4: TMenuItem
+        Caption = 'E&xit'
+        ShortCutKey2 = 115
+        OnClick = MenuItem4Click
+      end
+    end
+    object MenuItem2: TMenuItem
+      Caption = '&Help'
+      object MenuItem3: TMenuItem
+        Caption = 'About TurboStoic'
+        OnClick = MenuItem3Click
+      end
+    end
+  end
+end
