@@ -1,3 +1,5 @@
+TurboStoic is an experimental FreePascal implementation of a modern STOIC environment inspired by Forth, Lisp, and MSTOICAL
+
 I've always been interested in Forth, and later, STOIC.
 
 This is a new implementation of STOIC, with some modifications to try to make it as powerful, in expressive terms, as LISP.  It seems that something was lost when Forth was created, there's not really an ability to treat code as data, and vice-versa. I intend to fix that, and since STOIC really is effectively a dead language, I've got lost of freedom right now. ;-)
