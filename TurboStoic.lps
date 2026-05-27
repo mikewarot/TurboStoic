@@ -18,22 +18,47 @@
         <Filename Value="main_form.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="Form1"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <IsVisibleTab Value="True"/>
-        <TopLine Value="27"/>
-        <CursorPos X="42" Y="44"/>
+        <TopLine Value="36"/>
+        <CursorPos X="28" Y="53"/>
         <UsageCount Value="20"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
     </Units>
-    <JumpHistory HistoryIndex="1">
+    <JumpHistory HistoryIndex="7">
       <Position>
         <Filename Value="main_form.pas"/>
       </Position>
       <Position>
         <Filename Value="main_form.pas"/>
         <Caret Line="39" Column="25" TopLine="21"/>
+      </Position>
+      <Position>
+        <Filename Value="main_form.pas"/>
+        <Caret Line="44" Column="42"/>
+      </Position>
+      <Position>
+        <Filename Value="main_form.pas"/>
+        <Caret Line="45" Column="42" TopLine="24"/>
+      </Position>
+      <Position>
+        <Filename Value="main_form.pas"/>
+        <Caret Line="46" Column="42" TopLine="25"/>
+      </Position>
+      <Position>
+        <Filename Value="main_form.pas"/>
+        <Caret Line="47" Column="42" TopLine="26"/>
+      </Position>
+      <Position>
+        <Filename Value="main_form.pas"/>
+        <Caret Line="46" Column="42" TopLine="25"/>
+      </Position>
+      <Position>
+        <Filename Value="main_form.pas"/>
+        <Caret Line="48" Column="42" TopLine="27"/>
       </Position>
     </JumpHistory>
     <RunParams>
