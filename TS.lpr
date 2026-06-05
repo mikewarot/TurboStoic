@@ -31,11 +31,12 @@ var
     end;
   end;
 
-begin
-  Done := False;
-  for i := 1 to ParamCount do
+  Procedure ProcessSourceFile(FileName : String);
+  var
+    s : string;
   begin
-    Assign(Src,ParamStr(i));
+    WriteLn('--- BEGIN ',FileName,' ----');
+    Assign(Src,FileName);
     Reset(Src);
     While Not Eof(Src) do
     begin
@@ -43,7 +44,13 @@ begin
       ProcessCommand(CommandBuffer);
     end;
     Close(Src);
+    WriteLn('---- END ',FileName,' ----');
   end;
+
+begin
+  Done := False;
+  for i := 1 to ParamCount do
+    ProcessSourceFile(ParamStr(i));
 
   Prompt := 'TurboStoic: ';
   While Not Done do
