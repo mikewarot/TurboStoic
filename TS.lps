@@ -9,12 +9,20 @@
         <Filename Value="TS.lpr"/>
         <IsPartOfProject Value="True"/>
         <IsVisibleTab Value="True"/>
-        <CursorPos X="14" Y="14"/>
+        <CursorPos X="9" Y="8"/>
         <UsageCount Value="20"/>
         <Loaded Value="True"/>
       </Unit>
+      <Unit>
+        <Filename Value="mystrings.pas"/>
+        <UnitName Value="MyStrings"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="25"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit>
     </Units>
-    <JumpHistory HistoryIndex="1">
+    <JumpHistory HistoryIndex="3">
       <Position>
         <Filename Value="TS.lpr"/>
         <Caret Line="2" Column="20"/>
@@ -22,6 +30,14 @@
       <Position>
         <Filename Value="TS.lpr"/>
         <Caret Line="4" Column="23"/>
+      </Position>
+      <Position>
+        <Filename Value="TS.lpr"/>
+        <Caret Line="3" Column="12"/>
+      </Position>
+      <Position>
+        <Filename Value="TS.lpr"/>
+        <Caret Line="19" Column="46"/>
       </Position>
     </JumpHistory>
     <RunParams>

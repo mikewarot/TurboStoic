@@ -1,7 +1,11 @@
 program TS;
+uses
+  MyStrings;
 // TurboStoic Command Line Interface version
 var
-  prompt,commandbuffer : string;
+  prompt,
+  commandbuffer,
+  thing : string;
   done : boolean;
 begin
   Done := False;
@@ -11,6 +15,11 @@ begin
     ReadLn(commandbuffer);
     If commandbuffer = 'quit' then
       Done := True;
+    While CommandBuffer <> '' do
+    begin
+      Thing := Grabstring(CommandBuffer);
+      WriteLn('Processing Thing(',Thing,')');
+    end;
   until Done;
 end.
 
