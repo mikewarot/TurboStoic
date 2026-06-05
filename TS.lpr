@@ -13,22 +13,44 @@ type
 
 var
   prompt,
-  commandbuffer,
-  thing : string;
+  commandbuffer : String;
   done : boolean;
-begin
-  Done := False;
-  Prompt := 'TurboStoic: ';
-  Repeat
-    Write(prompt);
-    ReadLn(commandbuffer);
-    If commandbuffer = 'quit' then
-      Done := True;
-    While CommandBuffer <> '' do
+  i,j,k : integer;
+  FileName : string;
+  Src : TextFile;
+
+  Procedure ProcessCommand(S: String);
+  var
+    thing : string;
+  begin
+    While NOT Done AND (S<> '') do
     begin
-      Thing := Grabstring(CommandBuffer);
+      Thing := Grabstring(S);
+      If thing = 'quit' then done := true;
       WriteLn('Processing Thing(',Thing,')');
     end;
-  until Done;
+  end;
+
+begin
+  Done := False;
+  for i := 1 to ParamCount do
+  begin
+    Assign(Src,ParamStr(i));
+    Reset(Src);
+    While Not Eof(Src) do
+    begin
+      ReadLn(Src,CommandBuffer);
+      ProcessCommand(CommandBuffer);
+    end;
+    Close(Src);
+  end;
+
+  Prompt := 'TurboStoic: ';
+  While Not Done do
+  begin
+    Write(prompt);
+    ReadLn(commandbuffer);
+    ProcessCommand(CommandBuffer);
+  end;
 end.
 

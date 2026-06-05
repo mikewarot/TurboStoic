@@ -9,8 +9,8 @@
         <Filename Value="TS.lpr"/>
         <IsPartOfProject Value="True"/>
         <IsVisibleTab Value="True"/>
-        <TopLine Value="11"/>
-        <CursorPos X="81" Y="11"/>
+        <TopLine Value="32"/>
+        <CursorPos X="7" Y="54"/>
         <UsageCount Value="20"/>
         <Loaded Value="True"/>
       </Unit>
@@ -23,7 +23,7 @@
         <Loaded Value="True"/>
       </Unit>
     </Units>
-    <JumpHistory HistoryIndex="3">
+    <JumpHistory HistoryIndex="6">
       <Position>
         <Filename Value="TS.lpr"/>
         <Caret Line="2" Column="20"/>
@@ -39,6 +39,18 @@
       <Position>
         <Filename Value="TS.lpr"/>
         <Caret Line="19" Column="46"/>
+      </Position>
+      <Position>
+        <Filename Value="TS.lpr"/>
+        <Caret Line="21" Column="18" TopLine="10"/>
+      </Position>
+      <Position>
+        <Filename Value="TS.lpr"/>
+        <Caret Line="24" Column="3" TopLine="14"/>
+      </Position>
+      <Position>
+        <Filename Value="TS.lpr"/>
+        <Caret Line="38" Column="27" TopLine="26"/>
       </Position>
     </JumpHistory>
     <RunParams>
