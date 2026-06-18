@@ -44,6 +44,7 @@ implementation
   function GrabStoicString(Var S : String): String;
   var
     t : string;
+    i : integer;
   begin
     t := '';
     SkipSpace(S);
@@ -53,14 +54,27 @@ implementation
       If S[1] = '\' then
       begin
         Case s[2] of
-          '"' : begin
+          '"' : begin                        //  escape a "
                   T := T + '"';
                   Delete(S,1,2);
                 end;
+          '#' : begin                        // allow ascii codes, \#7 is a bell, for example
+                  Delete(S,1,2);
+                  i := GrabNumber(S);
+                  T := T + Char(lo(i));
+                end;
+          'e' : begin                        // escape character
+                  Delete(S,1,2);
+                  T := T + #27;
+                end;
+          'n' : begin                        // newline
+                  Delete(S,1,2);
+                  T := T + #10#13;
+                end
         else
-          begin
-            WriteLn('Unknown \ escape character',S[2]);
-            Halt(1);
+          begin  // handle unexpected escape characters by just including the \ instead of crashing
+            T := T + '\';
+            Delete(S,1,1);
           end;
         End; // case
       end

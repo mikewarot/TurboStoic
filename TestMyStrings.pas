@@ -42,6 +42,16 @@ begin
   Value := GrabStoicString(S);
   AssertEqual('short value','quote: "',Value);
   AssertEqual('short remainder',' rest',S);
+
+  S := '"quote: \#7" rest';
+  Value := GrabStoicString(S);
+  AssertEqual('short value','quote: '+#7,Value);
+  AssertEqual('short remainder',' rest',S);
+
+    S := '"quote: \q" rest';
+    Value := GrabStoicString(S);
+    AssertEqual('short value','quote: \q',Value);
+    AssertEqual('short remainder',' rest',S);
 end;
 
 begin
