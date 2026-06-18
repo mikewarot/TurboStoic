@@ -48,7 +48,7 @@ implementation
     t := '';
     SkipSpace(S);
     Expect('"',S);  // skip the leading quote
-    while (s <> '') AND NOT(S[1] in [' ',#9,#13,#10,'"']) do
+    while (s <> '') AND NOT(S[1] in ['"']) do
     begin
       t := t + s[1];
       delete(s,1,1);

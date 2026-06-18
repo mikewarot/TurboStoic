@@ -23,6 +23,11 @@ begin
 
   AssertEqual('short value', 'hello', Value);
   AssertEqual('short remainder', ' rest', S);
+
+  S := '"hello world" rest';
+  Value := GrabStoicString(S);
+  AssertEqual('short value','hello world',Value);
+  AssertEqual('short remaineder',' rest', S);
 end;
 
 begin

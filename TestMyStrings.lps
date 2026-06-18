@@ -8,22 +8,23 @@
       <Unit>
         <Filename Value="TestMyStrings.pas"/>
         <IsPartOfProject Value="True"/>
-        <IsVisibleTab Value="True"/>
-        <TopLine Value="8"/>
-        <CursorPos X="13" Y="4"/>
+        <TopLine Value="13"/>
+        <CursorPos X="28" Y="27"/>
         <UsageCount Value="20"/>
         <Loaded Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="mystrings.pas"/>
         <UnitName Value="MyStrings"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="1"/>
-        <CursorPos Y="57"/>
+        <TopLine Value="40"/>
+        <CursorPos X="38" Y="56"/>
         <UsageCount Value="10"/>
         <Loaded Value="True"/>
       </Unit>
     </Units>
-    <JumpHistory HistoryIndex="3">
+    <JumpHistory HistoryIndex="4">
       <Position>
         <Filename Value="TestMyStrings.pas"/>
       </Position>
@@ -38,6 +39,10 @@
       <Position>
         <Filename Value="mystrings.pas"/>
         <Caret Line="42" Column="47" TopLine="23"/>
+      </Position>
+      <Position>
+        <Filename Value="TestMyStrings.pas"/>
+        <Caret Line="30" Column="46" TopLine="9"/>
       </Position>
     </JumpHistory>
     <RunParams>
