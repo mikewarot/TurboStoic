@@ -8,23 +8,23 @@
       <Unit>
         <Filename Value="TestMyStrings.pas"/>
         <IsPartOfProject Value="True"/>
-        <TopLine Value="13"/>
-        <CursorPos X="28" Y="27"/>
-        <UsageCount Value="20"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="3"/>
+        <CursorPos X="3" Y="18"/>
+        <UsageCount Value="21"/>
         <Loaded Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="mystrings.pas"/>
         <UnitName Value="MyStrings"/>
-        <IsVisibleTab Value="True"/>
         <EditorIndex Value="1"/>
-        <TopLine Value="40"/>
-        <CursorPos X="38" Y="56"/>
+        <TopLine Value="52"/>
+        <CursorPos Y="75"/>
         <UsageCount Value="10"/>
         <Loaded Value="True"/>
       </Unit>
     </Units>
-    <JumpHistory HistoryIndex="4">
+    <JumpHistory HistoryIndex="25">
       <Position>
         <Filename Value="TestMyStrings.pas"/>
       </Position>
@@ -44,10 +44,104 @@
         <Filename Value="TestMyStrings.pas"/>
         <Caret Line="30" Column="46" TopLine="9"/>
       </Position>
+      <Position>
+        <Filename Value="TestMyStrings.pas"/>
+        <Caret Line="45" Column="28" TopLine="22"/>
+      </Position>
+      <Position>
+        <Filename Value="mystrings.pas"/>
+        <Caret Line="63" Column="21" TopLine="47"/>
+      </Position>
+      <Position>
+        <Filename Value="TestMyStrings.pas"/>
+        <Caret Line="34" TopLine="25"/>
+      </Position>
+      <Position>
+        <Filename Value="TestMyStrings.pas"/>
+        <Caret Line="35" TopLine="25"/>
+      </Position>
+      <Position>
+        <Filename Value="mystrings.pas"/>
+        <Caret Line="47" TopLine="35"/>
+      </Position>
+      <Position>
+        <Filename Value="mystrings.pas"/>
+        <Caret Line="48" TopLine="35"/>
+      </Position>
+      <Position>
+        <Filename Value="mystrings.pas"/>
+        <Caret Line="49" TopLine="35"/>
+      </Position>
+      <Position>
+        <Filename Value="mystrings.pas"/>
+        <Caret Line="50" TopLine="35"/>
+      </Position>
+      <Position>
+        <Filename Value="mystrings.pas"/>
+        <Caret Line="51" TopLine="35"/>
+      </Position>
+      <Position>
+        <Filename Value="mystrings.pas"/>
+        <Caret Line="73" TopLine="62"/>
+      </Position>
+      <Position>
+        <Filename Value="mystrings.pas"/>
+        <Caret Line="74" TopLine="62"/>
+      </Position>
+      <Position>
+        <Filename Value="mystrings.pas"/>
+        <Caret Line="47" TopLine="35"/>
+      </Position>
+      <Position>
+        <Filename Value="mystrings.pas"/>
+        <Caret Line="75" TopLine="64"/>
+      </Position>
+      <Position>
+        <Filename Value="mystrings.pas"/>
+        <Caret Line="47" TopLine="35"/>
+      </Position>
+      <Position>
+        <Filename Value="mystrings.pas"/>
+        <Caret Line="75" TopLine="64"/>
+      </Position>
+      <Position>
+        <Filename Value="TestMyStrings.pas"/>
+        <Caret Line="36" TopLine="25"/>
+      </Position>
+      <Position>
+        <Filename Value="TestMyStrings.pas"/>
+        <Caret Line="37" TopLine="25"/>
+      </Position>
+      <Position>
+        <Filename Value="TestMyStrings.pas"/>
+        <Caret Line="39" TopLine="25"/>
+      </Position>
+      <Position>
+        <Filename Value="TestMyStrings.pas"/>
+        <Caret Line="41" TopLine="25"/>
+      </Position>
+      <Position>
+        <Filename Value="TestMyStrings.pas"/>
+        <Caret Line="42" TopLine="25"/>
+      </Position>
+      <Position>
+        <Filename Value="TestMyStrings.pas"/>
+        <Caret Line="18" TopLine="4"/>
+      </Position>
     </JumpHistory>
     <RunParams>
       <FormatVersion Value="2"/>
       <Modes ActiveMode=""/>
     </RunParams>
   </ProjectSession>
+  <Debugging>
+    <Watches>
+      <Item>
+        <Expression Value="S"/>
+      </Item>
+      <Item>
+        <Expression Value="Value"/>
+      </Item>
+    </Watches>
+  </Debugging>
 </CONFIG>

@@ -11,7 +11,11 @@ begin
     WriteLn('  Expected: ', Expected);
     WriteLn('  Actual:   ', Actual);
     Halt(1);
-  end;
+  end
+(*
+  else
+    WriteLn('Passed:(',Name,') ',Expected,'=',Actual);
+*)
 end;
 
 procedure TestShortString;
@@ -27,7 +31,17 @@ begin
   S := '"hello world" rest';
   Value := GrabStoicString(S);
   AssertEqual('short value','hello world',Value);
-  AssertEqual('short remaineder',' rest', S);
+  AssertEqual('short remainder',' rest', S);
+
+  S := '""  rest';
+  Value := GrabStoicString(S);
+  AssertEqual('short value','',Value);
+  AssertEqual('short remainder','  rest',S);
+
+  S := '"quote: \"" rest';
+  Value := GrabStoicString(S);
+  AssertEqual('short value','quote: "',Value);
+  AssertEqual('short remainder',' rest',S);
 end;
 
 begin

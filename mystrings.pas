@@ -50,8 +50,25 @@ implementation
     Expect('"',S);  // skip the leading quote
     while (s <> '') AND NOT(S[1] in ['"']) do
     begin
-      t := t + s[1];
-      delete(s,1,1);
+      If S[1] = '\' then
+      begin
+        Case s[2] of
+          '"' : begin
+                  T := T + '"';
+                  Delete(S,1,2);
+                end;
+        else
+          begin
+            WriteLn('Unknown \ escape character',S[2]);
+            Halt(1);
+          end;
+        End; // case
+      end
+      else
+      begin
+        t := t + s[1];
+        delete(s,1,1);
+      end;
     end;
     Expect('"',S);  // skip the trailing quote
     GrabStoicString := T;
