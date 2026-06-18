@@ -9,6 +9,8 @@ interface
 
   function GrabString(Var S : String): String;
 
+  function GrabStoicString(Var S: String):String;
+
   function GrabNumber(Var S : String): Int64;
 
   function GrabUntil(Var S : String; Delimiter : CharSet):String;
@@ -31,12 +33,28 @@ implementation
   begin
     t := '';
     SkipSpace(S);
-    while (s <> '') AND NOT(S[1] in [' ',#9,#13,#10]) do
+    while (s <> '') AND NOT(S[1] in [' ',#9,#13,#10,'"']) do
     begin
       t := t + s[1];
       delete(s,1,1);
     end;
     GrabString := T;
+  end;
+
+  function GrabStoicString(Var S : String): String;
+  var
+    t : string;
+  begin
+    t := '';
+    SkipSpace(S);
+    Expect('"',S);  // skip the leading quote
+    while (s <> '') AND NOT(S[1] in [' ',#9,#13,#10,'"']) do
+    begin
+      t := t + s[1];
+      delete(s,1,1);
+    end;
+    Expect('"',S);  // skip the trailing quote
+    GrabStoicString := T;
   end;
 
   function GrabNumber(Var S : String): Int64;
